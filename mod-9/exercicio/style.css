@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 15px 0;
+    width: 100vw;
+    background-color: #2a638a;
+    color: #e9f3ff;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+header h4 {
+    text-align: center;
+    font-size: 1em;
+}
+
+section {
+    background-color: #9cccec;
+}
+
+section > div {
+    display: inline-block;
+    width: 100vw;
+    height: calc(100vh - 119.3px);
+    background-color: #9cccec;
+    text-align: center;
+}
+
+section > div div {
+    width: 50%;
+    height: 100%;
+}
+
+.texto-apresentado {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    font-size: 4.5em;
+    font-weight: lighter;
+    font-style: oblique;
+    background-color: #078f81;
+    color: #e9f3ff;
+    padding: 0 10px;
+}
+
+.texto-apresentado > p {
+    margin: auto;
+}
+
+.emoji {
+    display: flex;
+    float: left;
+    font-size: 7em;
+    background-color: #53a8a0;
+    vertical-align: middle;
+}
+
+.emoji > p {
+    margin: auto;
+}
+
+#phone-display, #tablet-display {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5px 0;
+    width: 100vw;
+    background-color: #616a70;
+    color: #ffffff;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.15em;
+}
+
+@media screen and (max-width: 425px) {
+    #pc-display, #tablet-display {
+        display: none;
+    }
+
+    #phone-display {
+        display: inline-block;
+    }
+
+    .texto-apresentado {
+        font-size: 2em;
+    }
+
+    section > div {
+        height: calc(100vh - 179.3px);
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 426px) {
+    #pc-display, #phone-display {
+        display: none;
+    }
+
+    #tablet-display {
+        display: inline-block;
+    }
+    
+}

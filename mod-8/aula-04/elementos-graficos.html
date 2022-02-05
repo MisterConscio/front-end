@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Gráficos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Elementos Gráficos</h1>
+
+    <div id="grafico1"></div>
+
+    <div id="grafico2">
+        <h2>-O-L-Á-</h2>
+    </div>
+
+    <div id="grafico3">
+        <img src="img/candy.svg" alt="Candy">
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script>
+        let canvas = document.querySelector("canvas")
+        let ctx = canvas.getContext("2d")
+
+        ctx.fillStyle = "#0000ff"
+        ctx.fillRect(100, 20, 100, 100)
+    </script>
+</body>
+</html>

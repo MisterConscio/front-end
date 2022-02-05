@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Fomularios</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 5px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            /* height: 300px; */
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Curso Front-end - HTML</h2>
+    </header>
+    <section>
+
+        <nav>
+            <ul>
+                <li><a href="../aula-01/layouts.html">Home</a></li>
+                <li><a href="#">Content</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./formularios.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Contato</h1>
+            <p>Preencha os campos abaixo.</p>
+
+            <form method="post">
+                
+                <div>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="2" placeholder="Fale sua opnião"></textarea>
+                </div><br>
+
+                <div>
+                    <label for="">Quais linguagens você prefere?</label>
+                    <input type="radio" name="linguagens" value="html">HTML
+                    <input type="radio" name="linguagens" value="css">CSS
+                    <input type="radio" name="linguagens" value="js">JS
+                </div><br>
+                
+                <div>
+                    <label for="">Quais linguagens você conhece?</label>
+                    <input type="checkbox" name="linguagens" value="css">CSS
+                    <input type="checkbox" name="linguagens" value="html">HTML
+                    <input type="checkbox" name="linguagens" value="js">JS
+                </div><br>
+
+                <div>
+                    <label for="">Qual o seu sistema operacional?</label>
+                    <select name="" id="">
+                        <option value="windows" selected>Windows</option>
+                        <option value="macOs">MacOs</option>
+                        <option value="linux">Linux</option>
+                        <option value="bsd">BSD</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        
+        </article>
+
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Saulo</p>
+    </footer>
+
+</body>
+</html>

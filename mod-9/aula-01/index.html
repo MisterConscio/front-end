@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros e Manipulação com CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            text-align: center;
+            filter: drop-shadow(8px 8px 10px #000);
+            margin-top: 100px;
+        }
+
+        .filter {
+            width: 800px;
+            opacity: 25%;
+        }
+
+        .filter:hover {
+           opacity: 100%;
+           filter: invert(100%);
+        }
+    </style>
+</head>
+<body>
+    <div id="grafico1">
+        <img class="filter" src="mister-fox.png" alt="">
+    </div>
+</body>
+</html>

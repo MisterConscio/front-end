@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizando CSS - Tela de login</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Faça seu login</h1>
+
+        <form method="get">
+            <div>
+                <label for="email-username">Email ou nome de usuário:</label>
+                <input type="text" name="email-username" id="user-input" placeholder="Digite seu email ou usuário">
+            </div>
+
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="psw-input" placeholder="Digite a sua senha">
+                <p id="forgot"><a href="./esqueceu-senha.html">Esqueceu a senha?</a></p>
+            </div>
+
+            <div id="sub-btn">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+
+        <p id="sign-up">Novo na plataforma? <a href="./fazer-conta.html">Faça sua conta aqui.</a></p>
+    </div>
+</body>
+</html>

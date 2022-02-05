@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #content h1{
+            padding: 5px 10px;
+            font-size: 2.5em;
+            font-style: italic;
+        }
+
+        #content h3 {
+            padding: 5px 10px;
+            font-style: italic;
+        }
+
+        table {
+            position: absolute;
+            display: inline-block;
+            border-collapse: collapse;
+            background-color: #fff;
+            overflow-x: auto;
+        }
+
+        table, th, td {
+            margin-left: 200px;
+            margin-top: 80px;
+            border: 1px solid rgb(172, 172, 172);
+            width: 50%;
+        }
+
+        table td, th {
+            text-align: center;
+            padding: 10px;
+        }
+
+        table th {
+            background-color: #0170bc;
+            color: #FAFAFF;
+        }
+
+        table > tbody + tr ~ td {
+            font-weight: 600;
+        }
+
+        table tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portifolio do Curso Front-end 💻</h1>
+        <h3>-EBAC-</h3>
+    </header>
+
+    <main>
+        <nav>
+            <h3>Conceitos aprendidos</h3>
+            <ul>
+                <a href="./index.html"><li>Listas</li></a>
+                <a href="./index-tabelas.html"><li>Tabelas</li></a>
+                <a href="./index-formatacao.html"><li>Formatação de Texto</li></a>
+                <a href="./index-formulario.html"><li>Formulários</li></a>
+            </ul>
+        </nav>
+
+        <section>
+            <div id="content">
+                <h1>Tabela</h1>
+                <h3>Feita em um exercício</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Year: 2020</th>
+                            <th colspan="2">Q1</th>
+                            <th colspan="2">Q2</th>
+                            <th colspan="2">Q3</th>
+                            <th colspan="2">Q4</th>
+                        </tr>
+                        <tr>
+                            <th>Products</th>
+                            <th>Actual</th>
+                            <th>Target</th>
+                            <th>Actual</th>
+                            <th>Target</th>
+                            <th>Actual</th>
+                            <th>Target</th>
+                            <th>Actual</th>
+                            <th>Target</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Product A</td>
+                            <td>650</td>
+                            <td>800</td>
+                            <td>800</td>
+                            <td>1.000</td>
+                            <td>950</td>
+                            <td>1.200</td>
+                            <td>XX</td>
+                            <td>XX</td>
+                        </tr>
+                        <tr>
+                            <td>Product B</td>
+                            <td>700</td>
+                            <td>800</td>
+                            <td>900</td>
+                            <td>1.000</td>
+                            <td>1.000</td>
+                            <td>1.200</td>
+                            <td>XX</td>
+                            <td>XX</td>
+                        </tr>
+                        <tr>
+                            <td>Product C</td>
+                            <td>750</td>
+                            <td>800</td>
+                            <td>950</td>
+                            <td>1.000</td>
+                            <td>1.000</td>
+                            <td>1.200</td>
+                            <td>XX</td>
+                            <td>XX</td>
+                        </tr>
+                        <tr style="font-weight: bold;">
+                            <td>Total Products Sold:</td>
+                            <td>2.100</td>
+                            <td>2.400</td>
+                            <td>2.650</td>
+                            <td>3.000</td>
+                            <td>3.050</td>
+                            <td>3.600</td>
+                            <td>XX</td>
+                            <td>XX</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+        
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Obrigado por visitar o site 😎, desenvolvido por <strong><a href="https://github.com/MisterConscio" target="_blank">Saulo Costa</a></strong></p>
+    </footer>
+</body>
+</html>

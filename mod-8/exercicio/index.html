@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #content div {
+            background-color: #84A98C;
+            width: 30%;
+            display: table;
+            float: left;
+            padding: 10px;
+            margin-left: 30px;
+            height: 100%;
+            border: 5px solid #CAD2C5;
+            
+        }
+
+        #content > h1 {
+            padding: 5px 10px;
+            font-size: 2.5em;
+            font-style: italic;
+        }
+
+        #content ul, ol, dl, dd {
+            list-style-position: inside;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portifolio do Curso Front-end 💻</h1>
+        <h3>-EBAC-</h3>
+    </header>
+
+    <main>
+        <nav>
+            <h3>Conceitos aprendidos</h3>
+            <ul>
+                <a href="./index.html"><li>Listas</li></a>
+                <a href="./index-tabelas.html"><li>Tabelas</li></a>
+                <a href="./index-formatacao.html"><li>Formatação de Texto</li></a>
+                <a href="./index-formulario.html"><li>Formulários</li></a>
+            </ul>
+        </nav>
+
+        <section>
+            <div id="content">
+                <h1>Listas</h1>
+
+                <div id="lista1">
+                    <h3>Lista não ordenada</h3>
+                    <ul>
+                        <li>Brasil
+                            <ul>
+                                <li>São Paulo</li>
+                                <li>Paraná</li>
+                                <li>Goiás</li>
+                                <li>Rondônia</li>
+                                <li>Sergipe
+                                    <ul>
+                                        <li>Aracaju</li>
+                                        <li>São Cristovão</li>
+                                        <li>Itabaiana</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="lista2">
+                    <h3>Lista Ordenada</h3>
+
+                    <ol>
+                        <li>Acordar</li>
+                        <li>Ir ao banheiro</li>
+                        <li>Lavar os pratos</li>
+                        <li>Preparar o café</li>
+                        <li>Tomar banho</li>
+                        <li>Fazer o curso da EBAC</li>
+                    </ol>
+                </div>
+
+                <div id="lista3">
+                    <h3>Lista de Definições</h3>
+
+                    <dl>
+                        <dt>Notebook Acer</dt>
+                        <dd>Intel Core i7 7700HQ</dd>
+                        <dd>Nvidea Geforce GTX 1050ti</dd>
+                        <dd>SSD Nvme 128gb</dd>
+                        <dd>16gb RAM</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Obrigado por visitar o site 😎, desenvolvido por <strong><a href="https://github.com/MisterConscio" target="_blank">Saulo Costa</a></strong></p>
+    </footer>
+</body>
+</html>

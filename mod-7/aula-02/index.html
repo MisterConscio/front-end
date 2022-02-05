@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Combinadores</title>
+    <style>
+
+        footer {
+            background-color: #d1d1d1;
+            padding: 5px;
+        }
+
+        /* Seleciona todos os <p> dentro de footer (descendente) */
+        footer p {
+            background-color: #888c91;
+        }
+
+        /* Seleciona o <p> que vem após a tag <footer> (filho) */
+        footer > p {
+            font-weight: bold;
+        }
+
+        /* Seleciona a tag <p> que vem depois de <div>, os quais estão dentro de <footer> (irmão) */
+        footer > div + p {
+            background-color: #0f0;
+        }
+
+        /* Seleciona todas as tags <p> que vem depois de <div>, os quais estão dentro de <footer> (irmãos) */
+        footer > div ~ p {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lorem ipsum dolor sit.</h1>
+    </header>
+
+    <article>
+        <h1>Lorem, ipsum.</h1>
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum explicabo, tempore labore eum ipsa deserunt ratione dolorem exercitationem? Illum id voluptatum corporis consectetur qui magni optio rerum voluptatibus commodi reprehenderit?</p>
+    </article>
+
+    <footer>
+        <p>Feito por Saulo</p>
+        <div><p>2022</p></div>
+        <p>Jampa, PB</p>
+        <p>Brasil</p>
+    </footer>
+</body>
+</html>

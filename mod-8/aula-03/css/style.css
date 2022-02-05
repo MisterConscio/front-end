@@ -1,0 +1,13 @@
+
+.background {
+    background: url("../imgs/Trollface.png");
+    background-color: #00ff00;
+    background-size: 100px;
+    width: 100%;
+    height: 50vw;
+    padding: 50px 0;
+}
+
+.wallpaper img {
+    width: 100%;
+}

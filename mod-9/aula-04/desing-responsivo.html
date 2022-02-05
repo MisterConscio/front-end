@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desig Resposivo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            display: inline-block;
+            width: 33%;
+            height: 200px;
+        }
+
+        @media (max-width: 425px){
+            div {
+                width: 100vw;
+                height: 33.33vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: gold;">Olá</div>
+    <div style="background-color: indianred;">Opa</div>
+    <div style="background-color: palegreen;">Oxi</div>
+</body>
+</html>

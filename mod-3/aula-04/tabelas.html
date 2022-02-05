@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas e Layouts Tabelados</title>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table border="1" width="40%">
+        <thead>
+            <tr>
+                <td colspan="3">Descrição da tabela</td>
+            </tr>
+            <tr>
+                <th>Coluna1</th>
+                <th>Coluna2</th>
+                <th>Coluna3</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>1A</td>
+                <td>1B</td>
+                <td>1C</td>
+            </tr>
+            <tr>
+                <td>2A</td>
+                <td>2B</td>
+                <td>2C</td>
+            </tr>
+            <tr>
+                <td>3A</td>
+                <td colspan="2">3BC</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Rodapé da tabela</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <h2>Tabela como layout</h2>
+
+    <table width="600">
+        <tr height="50" align="center">
+            <td colspan="4" bgcolor="#bbccee">Cabeçalho</td>
+        </tr>
+        <tr height="300" align="center">
+            <td width="20" bgcolor="#001100"></td>
+            <td bgcolor="#dddddd">Coluna 1</td>
+            <td bgcolor="#eeeeee">Coluna 2</td>
+            <td width="20" bgcolor="#001100"></td>
+        </tr>
+        <tr align="center">
+            <td bgcolor="#ff0000" colspan="4">Rodapé</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    margin: 40px auto;
+}
+
+div#grafico1 {
+    background-color: #f00;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+div#grafico2 {
+    text-align: center;
+    border-width: 60px 120px 60px 120px;
+    border-style: solid;
+    border-color: #ff0 #f00 #00f #0f0;
+    width: 200px;
+}
+
+div#grafico3 {
+    width: 200px;
+}
+
+canvas {
+    width: 100%;
+}
+
