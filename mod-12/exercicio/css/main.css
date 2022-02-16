@@ -104,7 +104,12 @@ footer {
     }
 
     .icon-bg {
-        width: max-content;
+        width: 80%;
+        text-align: center;
         margin: 0 auto;
+    }
+
+    .icon-bg img {
+        width: 20px;
     }
 }
