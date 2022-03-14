@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulário</title>
+    <style>
+
+        /* Global Values */
+
+        :root {
+            font-size: 18px;
+
+            --transition: all ease-in-out 150ms;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+
+        body {background-color: aquamarine;}
+
+        h1 {margin-bottom: 10px;}
+
+        .section {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Form Section */
+
+        .Form {
+            background-color: rgb(98, 214, 98);
+            padding: .5rem;
+            width: 500px;
+            border-radius: .5rem;
+            border: 2px solid rgb(6, 99, 6);
+        }
+
+        .form-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+            margin-bottom: .75rem;
+        }
+
+        .form-item > label {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .form-item > input {
+            border-radius: 0.25rem;
+            border: 1px solid #333;
+            font-size: 0.9rem;
+            padding: 0.5em;
+        }
+
+        .form-item:last-child {
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .form-item:last-child > button {
+            background-color: rgb(12, 83, 12);
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0.15rem;
+            width: 150px;
+            border: 0;
+            border-radius: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-item:last-child > button:hover,
+        .form-item:last-child > button:focus {
+            background-color: rgb(66, 156, 66);
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+
+        @media (max-width: 500px) {
+            h1 {font-size: 1.5rem;}
+
+            .Form {width: 300px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="section">
+
+        <h1>Preencha o formulário</h1>
+
+        <form action="" name="Form" method="get" class="Form" onsubmit="validarFormulario()">
+            <div class="form-item">
+                <label for="Nome">Nome</label>
+                <input type="text" name="Nome" id="Nome" placeholder="Nome Completo">
+            </div>
+            <div class="form-item">
+                <label for="Email">Email</label>
+                <input type="text" name="Nome" id="Nome" placeholder="exemplo@mail.com">
+            </div>
+            <div class="form-item">
+                <label for="Telefone">Telefone</label>
+                <input type="text" name="Telefone" id="Telefone" placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-item">
+                <label for="Cep">CEP</label>
+                <input type="text" name="Cep" id="Cep" placeholder="00000-000">
+            </div>
+            <div class="form-item">
+                <label for="Cidade">Cidade</label>
+                <input type="text" name="Cidade" id="Cidade" placeholder="Cidade onde mora">
+            </div>
+            <div class="form-item">
+                <label for="Uf">UF</label>
+                <input type="text" name="Uf" id="Uf" placeholder="Seu estado">
+            </div>
+            <div class="form-item">
+                <button type="submit">Enviar</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
