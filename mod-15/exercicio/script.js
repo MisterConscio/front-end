@@ -1,5 +1,6 @@
 // Pegando informações do formulário 
 const form    = document.querySelector(".Form")
+const input   = document.querySelectorAll("input")
 const nome    = form.elements['Nome']
 const email   = form.elements['Email']
 const telef   = form.elements['Telefone']
@@ -196,3 +197,29 @@ form.addEventListener('submit', function(e) {
     let isUfValid = checkUf()
 
 })
+
+// Mensagem de erro ao completar input
+for (let i in input) {
+    input[i].addEventListener('blur', function(e) {
+        switch (e.target.name) {
+            case 'Nome':
+                checkName()
+                break
+            case 'Email':
+                checkEmail()
+                break
+            case 'Telefone':
+                checkPhone()
+                break
+            case 'Cep':
+                checkCep()
+                break
+            case 'Cidade':
+                checkCity()
+                break
+            case 'Uf':
+                checkUf()
+                break
+        }
+    })
+}
