@@ -196,6 +196,13 @@ form.addEventListener('submit', function(e) {
     let isCityValid = checkCity()
     let isUfValid = checkUf()
 
+    let isFormValid = isNameValid&&isEmailValid&&isPhoneValid&&isCepValid&&isCityValid&&isUfValid
+
+    if (isFormValid) {
+        window.alert("----Formulário Válido----\nAgradeçemos por suas informações!")
+        form.reset()
+    }
+
 })
 
 // Mensagem de erro ao completar input
