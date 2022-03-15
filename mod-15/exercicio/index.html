@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validação de formulário</title>
+    <script src="./script.js" defer></script>
     <style>
 
         /* Global Values */
-
+        
         :root {
-            font-size: 18px;
-
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* Variables */
             --transition: all ease-in-out 150ms;
         }
 
@@ -23,7 +25,7 @@
 
         /* Header */
 
-        body {background-color: aquamarine;}
+        body {background-color: #f4f4f4;}
 
         h1 {margin-bottom: 10px;}
 
@@ -38,11 +40,12 @@
         /* Form Section */
 
         .Form {
-            background-color: rgb(98, 214, 98);
-            padding: .5rem;
+            background-color: #fff;
+            padding: 1rem;
             width: 500px;
             border-radius: .5rem;
-            border: 2px solid rgb(6, 99, 6);
+            box-shadow: 0 0  15px 2px rgba(0, 0, 0, 0.274);
+            /* border: 1px solid #000; */
         }
 
         .form-item {
@@ -53,8 +56,9 @@
         }
 
         .form-item > label {
-            font-weight: bold;
-            font-size: 1.1rem;
+            /* font-weight: bold; */
+            font-size: 1.05rem;
+            color: #4e4947;
         }
 
         .form-item > input {
@@ -62,6 +66,12 @@
             border: 1px solid #333;
             font-size: 0.9rem;
             padding: 0.5em;
+            color: #000;
+        }
+
+        .form-item > small {
+            font-size: 0.75rem;
+            color: #f00;
         }
 
         .form-item:last-child {
@@ -87,12 +97,22 @@
             cursor: pointer;
         }
 
+        .form-item.wrong input {
+            border-color: #f00;
+        }
+
+        .form-item.correct input {
+            border-color: #000;
+        }
+
         /* Media Queries */
 
         @media (max-width: 500px) {
             h1 {font-size: 1.5rem;}
 
             .Form {width: 300px;}
+
+            .form-item > label {font-size: 0.9rem;}
         }
 
     </style>
@@ -102,32 +122,38 @@
 
         <h1>Preencha o formulário</h1>
 
-        <form action="" name="Form" method="get" class="Form" onsubmit="validarFormulario()">
-            <div class="form-item">
+        <form action="" name="Form" method="get" class="Form">
+            <div class="form-item correct">
                 <label for="Nome">Nome</label>
                 <input type="text" name="Nome" id="Nome" placeholder="Nome Completo">
+                <small></small>
             </div>
-            <div class="form-item">
+            <div class="form-item correct">
                 <label for="Email">Email</label>
-                <input type="text" name="Nome" id="Nome" placeholder="exemplo@mail.com">
+                <input type="text" name="Email" id="Email" placeholder="exemplo@mail.com">
+                <small></small>
             </div>
-            <div class="form-item">
+            <div class="form-item correct">
                 <label for="Telefone">Telefone</label>
                 <input type="text" name="Telefone" id="Telefone" placeholder="(00) 00000-0000">
+                <small></small>
             </div>
-            <div class="form-item">
+            <div class="form-item correct">
                 <label for="Cep">CEP</label>
                 <input type="text" name="Cep" id="Cep" placeholder="00000-000">
+                <small></small>
             </div>
-            <div class="form-item">
+            <div class="form-item correct">
                 <label for="Cidade">Cidade</label>
                 <input type="text" name="Cidade" id="Cidade" placeholder="Cidade onde mora">
+                <small></small>
             </div>
-            <div class="form-item">
+            <div class="form-item correct">
                 <label for="Uf">UF</label>
-                <input type="text" name="Uf" id="Uf" placeholder="Seu estado">
+                <input type="text" name="Uf" id="Uf" placeholder="Seu estado (SP, RJ,...)">
+                <small></small>
             </div>
-            <div class="form-item">
+            <div class="form-item correct">
                 <button type="submit">Enviar</button>
             </div>
             
