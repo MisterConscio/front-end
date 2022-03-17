@@ -64,7 +64,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Lorem ipsum dolor sit.</h5>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, omnis neque.</p>
-                            <a class="btn btn-primary" href="#produto-1">Ver produto</a>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
                         </div>
                     </div>
 
@@ -119,5 +119,44 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 1</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 100</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 200</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
