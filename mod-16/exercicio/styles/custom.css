@@ -1,0 +1,12 @@
+section {padding: 4rem 0;}
+
+input, textarea {margin-bottom: 1rem;}
+
+h2 {font-weight: bold;}
+
+.card {
+    /* width: 32.5%;
+    float: left; */
+    /* margin-right: 5px; */
+    margin-bottom: 1.25rem;
+}
