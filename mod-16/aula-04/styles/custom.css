@@ -1,0 +1,9 @@
+section {padding: 4rem 0;}
+
+input, textarea {margin-bottom: 1rem;}
+
+.card {
+    width: 32.5%;
+    float: left;
+    margin-right: 5px;
+}
