@@ -19,12 +19,12 @@ const isEmailValid = (email) => {
 }
 
 const isPhoneValid = (telef) => {
-    const re = /\(([0-9]{2}|0{1}((x|[0-9]){2}[0-9]{2}))\)\s*[0-9]{3,4}[- ]*[0-9]{4}/
+    const re = /([0-9]{2}|0{1}((x|[0-9]){2}[0-9]{2}))\s*[0-9]{3,4}[- ]*[0-9]{4}/
     return re.test(telef)
 }
 
 const isCepValid = (cep) => {
-    const re = /^[0-9]{5}-[\d]{3}/
+    const re = /^[0-9]{8}/ //-[\d]{3}/
     return re.test(cep)
 }
 
@@ -136,7 +136,7 @@ const checkCep = () => {
     if (!isRequired(CEP)) {
         showError(cep, 'Seu CEP deve ser preenchido')
     } else if (!isCepValid(CEP)) {
-        showError(cep, 'CEP inválido')
+        showError(cep, 'CEP deve conter 8 dígitos sem o hífen(-)')
     } else {
         showSuccess(cep)
         valid = true
