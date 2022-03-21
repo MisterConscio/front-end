@@ -1,0 +1,21 @@
+/* Carousel */
+
+.carousel, .carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    min-height: 600px;
+}
+
+/* Mobile */
+
+.dropdown {display: none;}
+
+@media (max-width: 1000px) {
+    #search-nav-item {display: none !important;}
+
+    .dropdown {display: block;}
+}
