@@ -10,3 +10,7 @@ h2 {font-weight: bold;}
     /* margin-right: 5px; */
     margin-bottom: 1.25rem;
 }
+
+@media (max-width: 500px) {
+    .nav-link {padding-left: 0 !important; font-size: 1rem}
+}
