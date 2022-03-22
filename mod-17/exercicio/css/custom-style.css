@@ -19,3 +19,9 @@
 
     .dropdown {display: block;}
 }
+
+/* Sobre */
+
+#sobre h2 {
+    margin-bottom: 22px;
+}
