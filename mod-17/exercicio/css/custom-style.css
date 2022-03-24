@@ -25,3 +25,9 @@
 #sobre h2 {
     margin-bottom: 22px;
 }
+
+/* Card */
+
+/* .card {width: 13rem;} */
+
+.card > img {width: 100%;}
