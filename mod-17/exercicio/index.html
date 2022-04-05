@@ -30,7 +30,7 @@
                                     <a href="#produtos" class="nav-link active">Produtos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#cadastro" class="nav-link active">Cadastro</a>
+                                    <a href="#" class="nav-link active" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Cadastro</a>
                                 </li>
                                 
                             </ul>
@@ -115,7 +115,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -203,7 +203,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
                             <p class="card-text">Descrição sobre o produto</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -229,10 +229,54 @@
                 <li class="nav-item"><a href="#top" class="nav-link text-muted px-2">Home</a></li>
                 <li class="nav-item"><a href="#sobre" class="nav-link text-muted px-2">Sobre</a></li>
                 <li class="nav-item"><a href="#produtos" class="nav-link text-muted px-2">Produtos</a></li>
-                <li class="nav-item"><a href="#cadastro" class="nav-link text-muted px-2">Cadastro</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-muted px-2" data-bs-toggle="modal" data-bs-target="#cadastro" aria-hidden="true">Cadastro</a></li>
             </ul>
         </footer>
     </div>
-  
+
+    <!-- Modals -->
+    <div class="modal fade" tabindex="-1" id="cadastro">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Faça seu cadastro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" required>
+                            <label for="nomeCompleto">Nome Completo</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="enderecoEmail" placeholder="nome@email.com" required>
+                            <label for="enderecoEmail">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="endereco" placeholder="Rua Fulano" required>
+                            <label for="endereco">Endereço</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="bairro" placeholder="Bairro Sicrano" required>
+                            <label for="bairro">Bairro</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="Cep" placeholder="00000-000" required>
+                            <label for="Cep">CEP</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="telefone" placeholder="(00)00000-0000" required>
+                            <label for="telefone">Telefone</label>
+                        </div>
+                        <div class="col-12 d-flex flex-fill justify-content-between">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+      
 </body>
 </html>
