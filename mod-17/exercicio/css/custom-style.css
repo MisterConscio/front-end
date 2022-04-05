@@ -1,7 +1,15 @@
 /* Carousel */
 
 .carousel, .carousel-item {
-    height: 600px;
+    height: 700px;
+}
+
+@media (max-width: 1050px) {
+    .carousel, .carousel-item {height: 600px;}
+}
+
+@media (max-width: 576px) {
+    .carousel, .carousel-item {height: 600px;}
 }
 
 .carousel-item img {
