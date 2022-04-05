@@ -31,3 +31,9 @@
 /* .card {width: 13rem;} */
 
 .card > img {width: 100%;}
+
+/* Footer */
+
+/* @media (max-width: 576px) {
+    footer > a {justify-content: center;}
+} */
