@@ -13,9 +13,10 @@
 }
 
 .carousel-item img {
-    position: absolute;
+    /* position: absolute; */
     object-fit: cover;
     min-height: 600px;
+    vertical-align: middle;
 }
 
 /* Mobile */
@@ -45,3 +46,15 @@
 /* @media (max-width: 576px) {
     footer > a {justify-content: center;}
 } */
+
+/* Form (Chrome and Firefox) */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
